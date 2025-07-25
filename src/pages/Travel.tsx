@@ -65,7 +65,7 @@ const Travel = () => {
                     </div>
                     <div>
                       <h1 className="text-3xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
-                        Travel Explorer
+                        Travel & Culture
                       </h1>
                       <p className="text-muted-foreground">
                         Discover amazing destinations and travel experiences
@@ -119,7 +119,7 @@ const Travel = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               >
                 {travelData.map((content, index) => (
                   <ContentCard

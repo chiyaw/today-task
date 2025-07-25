@@ -65,7 +65,7 @@ const Entertainment = () => {
                     </div>
                     <div>
                       <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
-                        Fun Facts Hub
+                        Entertainment
                       </h1>
                       <p className="text-muted-foreground">
                         Amazing facts and entertaining trivia
@@ -119,7 +119,7 @@ const Entertainment = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               >
                 {entertainmentData.map((content, index) => (
                   <ContentCard

@@ -23,7 +23,7 @@ export const ContentFeed = () => {
         hashtags: socialHashtags,
       }));
     }
-  }, [dispatch, enabledCategories, newsTopics, movieGenres, socialHashtags]);
+  }, [dispatch, categories, newsTopics, movieGenres, socialHashtags]);
 
   if (loading) {
     return (

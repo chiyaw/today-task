@@ -1,8 +1,8 @@
 import { ContentItem } from '../types/content';
 
 class EntertainmentServiceRapi {
-  private baseURL = 'https://fun-facts1.p.rapidapi.com/api/fun-facts';
-  private apiKey = '24a1e6429emsh2b56062922407e1p1b40dcjsnb3d71a3bddbc';
+  private baseURL = 'https://www.tvmaze.com/api';
+  private apiKey = 'https://api.tvmaze.com/search/shows?q=how%20i%20met%20your%20mother';
 
   async getEntertainmentData(): Promise<ContentItem[]> {
     const options = {
@@ -46,7 +46,7 @@ class EntertainmentServiceRapi {
           id: `entertainment-${i}-${Date.now()}`,
           title: item.title || item.fact || item.text || `Amazing Fun Fact #${i + 1}`,
           description: item.description || item.detail || item.explanation || item.text || `Discover fascinating and entertaining facts that will amaze you! These fun facts cover a wide range of topics from science to history to everyday life.`,
-          image: item.image || `https://images.unsplash.com/photo-${1557804506909 + i}-4ec0652f82e9?w=800&h=400&fit=crop`,
+          image: item.image,
           url: item.url || item.link || '#',
           type: 'entertainment',
           category: 'fun-facts',

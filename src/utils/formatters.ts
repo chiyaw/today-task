@@ -41,6 +41,15 @@ export const getContentTypeColor = (type: string): string => {
       return 'content-entertainment';
     case 'social':
       return 'content-social';
+    case 'sports':
+        return 'content-sports';
+    case 'education':
+      return 'content-education';
+    case 'finance':
+      return 'content-finance';
+    case 'travel':
+      return 'content-travel';
+    case 'technology':
     default:
       return 'primary';
   }
@@ -54,6 +63,14 @@ export const getContentTypeGradient = (type: string): string => {
       return 'bg-gradient-entertainment';
     case 'social':
       return 'bg-gradient-social';
+    case 'sports':
+      return 'bg-gradient-sports';
+    case 'education':
+      return 'bg-gradient-education';
+    case 'finance':
+      return 'bg-gradient-finance';
+    case 'travel':
+      return 'bg-gradient-travel';
     default:
       return 'bg-gradient-primary';
   }

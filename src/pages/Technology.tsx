@@ -65,7 +65,7 @@ const Technology = () => {
                     </div>
                     <div>
                       <h1 className="text-3xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
-                        Tech Innovation
+                        Science & Technology
                       </h1>
                       <p className="text-muted-foreground">
                         Latest technology trends and innovations
@@ -119,7 +119,7 @@ const Technology = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               >
                 {technologyData.map((content, index) => (
                   <ContentCard

@@ -30,7 +30,7 @@ const News = () => {
       const data = await newsServiceRapi.getNewsData();
       setNewsData(data);
     } catch (err) {
-      setError('Failed to fetch news data');
+      setError('Failed to fetch electric vehicle news');
       console.error('Error fetching news data:', err);
     } finally {
       setLoading(false);
@@ -65,10 +65,10 @@ const News = () => {
                     </div>
                     <div>
                       <h1 className="text-3xl font-bold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
-                        Current Affairs
+                        News & Current Affairs
                       </h1>
                       <p className="text-muted-foreground">
-                        Latest news and current affairs from India
+                        Latest news on electric vehicles, green technology, and sustainability from Google News
                       </p>
                     </div>
                   </div>
@@ -94,7 +94,7 @@ const News = () => {
               >
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Loader2 className="h-6 w-6 animate-spin" />
-                  <span>Loading news data...</span>
+                  <span>Loading electric vehicle news...</span>
                 </div>
               </motion.div>
             )}
@@ -119,7 +119,7 @@ const News = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               >
                 {newsData.map((content, index) => (
                   <ContentCard
@@ -139,9 +139,9 @@ const News = () => {
               >
                 <div className="text-center">
                   <Rss className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">No News Available</h3>
+                  <h3 className="text-lg font-semibold mb-2">No EV News Available</h3>
                   <p className="text-muted-foreground mb-4">
-                    We couldn't find any news content at the moment.
+                    We couldn't find any electric vehicle or sustainability news at the moment.
                   </p>
                   <Button onClick={handleRefresh} variant="outline">
                     Refresh

@@ -47,11 +47,17 @@
 
     /* Gradients for beautiful UI */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-news: linear-gradient(135deg, hsl(var(--news-color)), hsl(220 90% 70%));
+    --gradient-news: linear-gradient(135deg, #ef4444, #ea580c);
     --gradient-entertainment: linear-gradient(135deg, hsl(var(--entertainment-color)), hsl(338 83% 72%));
     --gradient-social: linear-gradient(135deg, hsl(var(--social-color)), hsl(142 76% 50%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
     --gradient-hero: linear-gradient(135deg, hsl(262 73% 57%) 0%, hsl(142 76% 36%) 100%);
+    --gradient-sports: linear-gradient(135deg, #16a34a, #2563eb);
+    --gradient-travel: linear-gradient(135deg, hsl(var(--travel-color)), hsl(142 76% 50%));
+    --gradient-education: linear-gradient(135deg, hsl(var(--education-color)), hsl(142 76% 50%));
+    --gradient-finance: linear-gradient(135deg, #10b981, #16a34a);
+    --gradient-technology: linear-gradient(135deg, hsl(var(--technology-color)), hsl(142 76% 50%));
+    --gradient-lifestyle: linear-gradient(135deg, hsl(var(--lifestyle-color)), hsl(142 76% 50%));
 
     /* Shadows with brand colors */
     --shadow-primary: 0 10px 40px -10px hsl(var(--primary) / 0.3);

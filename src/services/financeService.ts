@@ -48,7 +48,7 @@ class FinanceService {
           description: baseItem.description || baseItem.content || `Stay informed about the latest developments in financial markets, business trends, and economic analysis. Get insights that matter for your investments.`,
           image: baseItem.image || `https://images.unsplash.com/photo-${1611974789855 + i}-9c2a0a7236a3?w=800&h=400&fit=crop`,
           url: baseItem.url || baseItem.link || '#',
-          type: 'finance' as any,
+          type: 'Business & Finance' as any,
           category: 'business',
           source: baseItem.source || 'Financial News',
           publishedAt: baseItem.publishedAt || new Date(Date.now() - i * 3600000).toISOString(),
