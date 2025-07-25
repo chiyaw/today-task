@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Content Dashboard Design System - Beautiful gradients, colors and animations */
+
+@layer base {
+  :root {
+    /* Content Dashboard Color Palette */
+    --background: 210 11% 96%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Beautiful brand colors */
+    --primary: 262 73% 57%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 100% 75%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 262 73% 57%;
+
+    --radius: 0.75rem;
+
+    /* Content-specific colors */
+    --news-color: 220 90% 56%;
+    --entertainment-color: 338 83% 58%;
+    --social-color: 142 76% 36%;
+    --trending-color: 43 96% 56%;
+
+    /* Gradients for beautiful UI */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-news: linear-gradient(135deg, hsl(var(--news-color)), hsl(220 90% 70%));
+    --gradient-entertainment: linear-gradient(135deg, hsl(var(--entertainment-color)), hsl(338 83% 72%));
+    --gradient-social: linear-gradient(135deg, hsl(var(--social-color)), hsl(142 76% 50%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 73% 57%) 0%, hsl(142 76% 36%) 100%);
+
+    /* Shadows with brand colors */
+    --shadow-primary: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(220 20% 20% / 0.08);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 262 73% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 262 73% 57%;
+  }
+
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 84% 5%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 262 100% 75%;
+    --primary-foreground: 222 84% 5%;
+    --primary-glow: 262 100% 85%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 142 76% 50%;
+    --accent-foreground: 222 84% 5%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 262 100% 75%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-news: linear-gradient(135deg, hsl(220 90% 70%), hsl(220 90% 80%));
+    --gradient-entertainment: linear-gradient(135deg, hsl(338 83% 72%), hsl(338 83% 82%));
+    --gradient-social: linear-gradient(135deg, hsl(142 76% 50%), hsl(142 76% 60%));
+    --gradient-card: linear-gradient(145deg, hsl(217 33% 17%), hsl(217 33% 20%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 100% 75%) 0%, hsl(142 76% 50%) 100%);
+
+    --shadow-primary: 0 10px 40px -10px hsl(var(--primary) / 0.4);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+
+    --sidebar-background: 222 84% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 262 100% 75%;
+    --sidebar-primary-foreground: 222 84% 5%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 262 100% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
